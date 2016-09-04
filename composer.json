@@ -1,0 +1,16 @@
+{
+    "name": "oudmane/oudyapp",
+    "description": "a Skeleton for OudyPlat",
+    "type": "project",
+    "require": {
+        "oudmane/oudyplat": "2.5.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayoub Oudmane",
+            "email": "ayoub@oudmane.me"
+        }
+    ],
+    "minimum-stability": "stable"
+}
