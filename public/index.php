@@ -10,4 +10,4 @@ $application->loadByPageURL();
 
 //echo json_encode($application, JSON_PRETTY_PRINT);
 
-$application->render('layout');
+$application->render($_GET['format'] ?? 'layout');

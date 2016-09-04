@@ -9,6 +9,10 @@
  * @var \OudyPlat\Object $data
  */
 
-$page->title = 'OudyApp';
+$data->session = $session;
 
-$page->addModule('toolbar-right', 'menu');
+if($add = $request->getPost('set'))
+    $session->set($add['key'], $add['value']);
+
+$page->preTitle('Session');
+$page->preTitle($session->get('user_id'));
